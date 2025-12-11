@@ -1,0 +1,175 @@
+/* =========================================
+   SKILLS SECTION (VADER THEME)
+   ========================================= */
+
+/* Hapus :root jika sudah ada di paling atas file style.css Anda */
+:root {
+  --sith-red: #e60000;      /* Merah menyala */
+  --card-dark: rgba(10, 10, 10, 0.85); /* Hitam transparan */
+  --text-gray: #b3b3b3;
+}
+
+.skills-section {
+  padding: 80px 20px;
+  /* Background transparan agar background gambar (body) tetap terlihat */
+  background-color: transparent; 
+  color: #fff;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Judul */
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.section-title .highlight {
+  color: var(--sith-red);
+  text-shadow: 0 0 10px rgba(230, 0, 0, 0.5); /* Sedikit efek glow di teks */
+}
+
+/* Grid Layout */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+/* Kartu Skill */
+.skill-card {
+  background: var(--card-dark);
+  /* Efek kaca buram (Glassmorphism) biar elegan */
+  backdrop-filter: blur(5px); 
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 30px 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+/* Efek Hover: Kartu Terangkat & Glow Merah */
+.skill-card:hover {
+  transform: translateY(-7px);
+  border-color: var(--sith-red);
+  /* Efek cahaya lightsaber merah */
+  box-shadow: 0 0 25px rgba(230, 0, 0, 0.4); 
+}
+
+/* Ikon */
+.icon-box {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  color: var(--text-gray);
+  transition: 0.4s;
+}
+
+.skill-card:hover .icon-box {
+  color: var(--sith-red);
+  transform: scale(1.1); /* Ikon membesar sedikit */
+}
+
+/* Teks */
+.skill-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.skill-card p {
+  color: var(--text-gray);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* =========================================
+   SKILLS SECTION (TEMA VADER / DARK GLOW)
+   ========================================= */
+
+/* Pastikan section ini transparan agar background body terlihat */
+.skills-section {
+  padding: 80px 20px;
+  background-color: transparent; 
+  font-family: 'Poppins', sans-serif; /* Sesuaikan dengan font utama */
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Judul "My Skills" */
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.section-title .highlight {
+  color: #e60000; /* Merah Sith */
+  text-shadow: 0 0 15px rgba(230, 0, 0, 0.6); /* Efek cahaya di teks */
+}
+
+/* Grid Pembungkus Kartu */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+/* Kartu Skill */
+.skill-card {
+  background: rgba(10, 10, 10, 0.85); /* Hitam transparan */
+  backdrop-filter: blur(5px);         /* Efek kaca buram */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 30px 20px;
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+/* Hover: Efek Glow Merah saat mouse masuk */
+.skill-card:hover {
+  transform: translateY(-7px); /* Kartu naik sedikit */
+  border-color: #e60000;
+  box-shadow: 0 0 25px rgba(230, 0, 0, 0.5); /* Cahaya merah di sekeliling */
+}
+
+/* Ikon (Logo) */
+.icon-box {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  color: #b3b3b3; /* Abu-abu */
+  transition: 0.4s;
+}
+
+.skill-card:hover .icon-box {
+  color: #e60000; /* Ikon jadi merah */
+  transform: scale(1.1);
+}
+
+/* Teks Judul & Deskripsi */
+.skill-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.skill-card p {
+  color: #b3b3b3;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
